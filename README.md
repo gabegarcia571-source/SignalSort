@@ -1,4 +1,4 @@
-# File-System-Organizer
+# SignalSort
 
 **Smart file organization. Built in 4 hours. Deterministic, efficient, zero bloat.**
 
