@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "taxonomy": {
+    "Personal_Projects": {
+      "description": "AI systems, automation tools, and builds meant to be shared publicly via GitHub",
+      "keywords": ["model", "pipeline", "automation", "build", "tool", "github", "deploy", "train", "inference", "dataset", "classifier", "organizer", "bot"],
+      "subfolders": ["Active", "Archived", "Shared_Publicly"],
+      "tier0_patterns": ["pipeline", "model_", "_model", "automat", "classifier", "bot_", "_bot"]
+    },
+    "Teaching_Assistant": {
+      "description": "TA work for Information Systems — grading, submissions, gradebooks, rubrics",
+      "keywords": ["grade", "gradebook", "submission", "rubric", "assignment", "student", "canvas", "roster", "feedback", "score", "marks", "attendance", "solution", "solutions", "answer key", "gradesheet", "grading"],
+      "subfolders": ["Submissions", "Gradebooks", "Grading_Sheets"],
+      "tier0_patterns": ["grade", "gradebook", "rubric", "submission", "roster", "canvas", "attendance", "answer.?key", "solution(s)?", "grade.?sheet", "hw\\d", "ps\\d", "a\\d_grade"]
+    },
+    "Professional_Development": {
+      "description": "Business fraternity activities, career building, recruiting, networking",
+      "keywords": ["fraternity", "resume", "interview", "recruiting", "networking", "professional", "career", "application", "cover letter", "job", "internship", "offer", "case competition", "caseathon", "scholarship", "mentorship", "bootcamp", "timeline", "conclave", "dsp", "pac", "intern"],
+      "subfolders": ["Fraternity", "Career", "Recruiting"],
+      "tier0_patterns": ["resume", "\\bcv\\b", "cv_", "_cv", "\\bcl\\b", "cover.?letter", "fraternity", "recruiting", "interview", "internship", "job.?app", "case.?competition", "caseathon", "conclave", "\\bdsp\\b", "\\bpac\\b", "scholarship"]
+    },
+    "LinkedIn_Content": {
+      "description": "LinkedIn posts, drafts, content ideas, engagement strategy, newsletter",
+      "keywords": ["linkedin", "post", "content", "draft", "caption", "newsletter", "engagement", "hook", "thread", "graph", "chart", "dashboard", "dataviz", "data viz", "visualization", "infographic", "banner"],
+      "subfolders": ["Posts", "Drafts", "Assets"],
+      "tier0_patterns": ["linkedin", "post_draft", "caption", "newsletter", "content.?plan", "data.?viz", "dashboard", "chart", "graph", "infographic", "banner"]
+    },
+    "Volunteering": {
+      "description": "Volunteer work, community involvement, nonprofit, service",
+      "keywords": ["volunteer", "nonprofit", "community", "service", "outreach", "charity", "event", "social impact"],
+      "subfolders": ["Active", "Opportunities"],
+      "tier0_patterns": ["volunteer", "nonprofit", "service.?log", "outreach"]
+    },
+    "Academic": {
+      "description": "All coursework, class materials, papers — split between authored by user vs external",
+      "keywords": ["homework", "exam", "lecture", "syllabus", "class", "course", "university", "paper", "essay", "thesis", "abstract", "doi", "journal", "citation", "midterm", "final", "pset", "problem set", "readings", "reading", "session", "srq", "chapter", "worksheet", "study sheet"],
+      "subfolders": ["My_Writing", "External_Papers_Articles", "Class_Data", "Course_Materials", "Coding_Homework"],
+      "tier0_patterns": ["hw\\d", "pset\\d", "ps\\d", "midterm", "final_exam", "lecture", "syllabus", "\\blec\\d+\\b", "session\\s*\\d+", "\\bsrq\\s*\\d+\\b", "readings?", "essay_draft", "paper_draft"]
+    },
+    "Data_Bucket": {
+      "description": "Generic data files that do not need project-level routing yet",
+      "keywords": [],
+      "subfolders": ["CSV", "Spreadsheets", "Stata", "Structured", "General"],
+      "tier0_patterns": []
+    },
+    "Review_Buckets": {
+      "description": "Deterministic holding buckets for low-signal generic files",
+      "keywords": [],
+      "subfolders": ["PNGs", "JPG_JPEG", "Images_Generic", "Archives_Generic", "Email_System", "Installers"],
+      "tier0_patterns": []
+    },
+    "Personal": {
+      "description": "Anything that does not fit another category",
+      "keywords": [],
+      "subfolders": [],
+      "tier0_patterns": []
+    }
+  },
+  "review": {
+    "folder": "_Needs_Review",
+    "confidence_threshold": 0.90,
+    "generate_report": true,
+    "report_fields": ["filename", "top_guess", "confidence", "reason_flagged"]
+  },
+  "academic_authorship": {
+    "my_writing_signals": ["draft", "final", "submission", "essay", "hw", "ps", "pset", "notes_", "my_", "_mine"],
+    "external_signals": ["abstract", "doi", "journal", "author", "et al", "published", "proceedings", "arxiv"]
+  },
+  "organization": {
+    "simple_mode": true,
+    "collapse_subfolders": {
+      "Academic": "General",
+      "Data_Bucket": "Data",
+      "Review_Buckets": "General",
+      "Teaching_Assistant": "General",
+      "Professional_Development": "General",
+      "LinkedIn_Content": "General",
+      "Volunteering": "General",
+      "Personal_Projects": "General"
+    }
+  },
+  "performance": {
+    "llm_workers": 6
+  }
+}

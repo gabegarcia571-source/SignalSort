@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "user_type": "both",
+  "work_areas": [
+    "AI systems and automation",
+    "Teaching Assistant for Information Systems",
+    "Business fraternity professional development",
+    "LinkedIn content creation"
+  ],
+  "has_job_search": true,
+  "creates_public_content": true,
+  "does_research": false,
+  "other_areas": [
+    "Personal GitHub projects",
+    "Volunteering"
+  ],
+  "notes": "Reference implementation. TA work includes grading, submissions, gradebooks. Personal projects are AI/automation tools meant to be shared publicly."
+}
